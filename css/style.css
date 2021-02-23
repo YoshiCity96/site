@@ -359,6 +359,10 @@ h6 {
   bottom: 0;
 }
 
+.menu-main {
+  background-color: #ffffff00;
+}
+
 .wrapper-kontakt {
   background-image: url(../img/contact.png);
 }
@@ -549,63 +553,32 @@ h6 {
 
 .wrapper-portfolio {
   background-image: url(../img/work.png);
+  padding: 0 0 90px 0;
 }
 
 .work__title {
   color: #f1f1f5;
   font-size: 128px;
   font-weight: bold;
-  margin: 110px 0 0 136px;
+  margin: 90px 0 0 136px;
 }
 
-/* Слайдер */
-
-/* Слайдер запущен */
-
-/* Слайдер с точками */
-
-/* Ограничивающая оболочка */
-
-.slick-list {
-  overflow: hidden;
+.swiper-container {
+  max-width: 1620px;
+  margin: 45px 0 0 0;
 }
 
-/* Лента слайдов */
-
-.slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.swiper-wrapper {
+  margin: 0 0 50px 0;
 }
 
-/* Слайд */
+.swiper-slide img {
+  width: 318px;
+  height: 566px;
+}
 
-/* Слайд активный (показывается) */
-
-/* Слайд основной */
-
-/* Слайд по центру */
-
-/* Клонированный слайд */
-
-/* Стрелка */
-
-/* Стрелка влево */
-
-/* Стрелка вправо */
-
-/* Стрелка не активная */
-
-/* Точки (булиты) */
-
-/* Активная точка */
-
-/* Элемент точки */
-
-.slider {
-  border: solid 2px black;
-  max-width: 1600px;
-  margin: 50px auto 0 auto;
+.swiper-pagination {
+  margin: 580px 0 0 0;
 }
 
 .wrapper-onas {
