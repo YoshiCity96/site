@@ -242,29 +242,48 @@ h6 {
 
 .header__logo {
   position: fixed;
-  top: 10px;
-  left: 5%;
+  top: 25px;
+  left: 2.5%;
   z-index: 3;
   color: #f1f1f5;
-  font-size: 28px;
+  font-size: 36px;
+  font-weight: 300;
 }
 
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 500px 0 0 0;
+  margin: 500px 0 0 218px;
+}
+
+.header__list :first-child {
+  padding: 0;
+}
+
+.header__list_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 500px 0 0 410px;
+}
+
+.header__list_main :first-child {
+  padding: 0;
 }
 
 .header__link {
   font-weight: bold;
   position: relative;
-  color: #f1f1f5;
   text-align: center;
   font-size: 50px;
   padding: 0 0 0 250px;
   text-transform: uppercase;
   line-height: 0.8;
+}
+
+.header__link a {
+  color: #f1f1f5;
 }
 
 .header__link span {
@@ -341,7 +360,7 @@ h6 {
 }
 
 .wrapper-kontakt {
-  background-image: url(../img/фон.png);
+  background-image: url(../img/contact.png);
 }
 
 .kontakt__title {
@@ -529,7 +548,7 @@ h6 {
 }
 
 .wrapper-portfolio {
-  background-image: url(../img/фон.png);
+  background-image: url(../img/work.png);
 }
 
 .work__title {
