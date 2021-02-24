@@ -223,13 +223,78 @@ h6 {
 
 .header .arrow {
   cursor: pointer;
-  width: 30%;
-  height: 100%;
+  overflow: hidden;
+  width: 16%;
+  height: 70%;
+  top: 15%;
   right: 0;
   position: absolute;
   -webkit-transition: all 0.5s ease-in 0s;
   -o-transition: all 0.5s ease-in 0s;
   transition: all 0.5s ease-in 0s;
+}
+
+.header .arrow__1 {
+  position: absolute;
+  right: -90px;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.header .arrow__2 {
+  position: absolute;
+  right: -180px;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.header .arrow__3 {
+  position: absolute;
+  right: -270px;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .header .arrow.active {
