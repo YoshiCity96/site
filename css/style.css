@@ -221,12 +221,29 @@ h6 {
   right: 0;
 }
 
+.header .arrow {
+  cursor: pointer;
+  width: 30%;
+  height: 100%;
+  right: 0;
+  position: absolute;
+  -webkit-transition: all 0.5s ease-in 0s;
+  -o-transition: all 0.5s ease-in 0s;
+  transition: all 0.5s ease-in 0s;
+}
+
+.header .arrow.active {
+  right: 100%;
+  -webkit-transition: all 0.5s ease-in 0s;
+  -o-transition: all 0.5s ease-in 0s;
+  transition: all 0.5s ease-in 0s;
+}
+
 .header .button__button {
   cursor: pointer;
   width: 30%;
   height: 100%;
   right: 0;
-  border-left: solid 2px black;
   position: absolute;
   -webkit-transition: all 0.5s ease-in 0s;
   -o-transition: all 0.5s ease-in 0s;
@@ -243,7 +260,7 @@ h6 {
 .header__logo {
   position: fixed;
   top: 25px;
-  left: 2.5%;
+  left: 48px;
   z-index: 3;
   color: #f1f1f5;
   font-size: 36px;
@@ -564,7 +581,7 @@ h6 {
 }
 
 .swiper-container {
-  max-width: 1620px;
+  max-width: 1630px;
   margin: 45px 0 0 0;
 }
 
@@ -573,6 +590,7 @@ h6 {
 }
 
 .swiper-slide img {
+  border-radius: 10px;
   width: 318px;
   height: 566px;
 }
@@ -764,7 +782,8 @@ body {
   position: fixed;
   z-index: 3;
   top: 90%;
-  left: 5%;
+  left: 48px;
+  opacity: 0.4;
 }
 
 .home__video {

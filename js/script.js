@@ -7,14 +7,12 @@ $(document).ready(function(){
 	$('.header__burger').click(function(event){
 		$('.header__burger,.header__menu').toggleClass('active');
 	});
-		$('.porf').click(function(event){
-		$(this).toggleClass('active').next().slideToggle(300);		
-	});
-	$('.button__button').click(function(event){
-		$('.button__button,.header__menu,.header__close').addClass('active');
+		
+	$('.arrow').click(function(event){
+		$('.arrow,.header__menu,.header__close').addClass('active');
 	});
 	$('.header__close').click(function(event){
-		$('.button__button,.header__menu,.header__close').removeClass('active');
+		$('.arrow,.header__menu,.header__close').removeClass('active');
 	});
 	
 	$('.onas__arrow').click(function(){
