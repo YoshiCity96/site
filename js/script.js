@@ -9,10 +9,10 @@ $(document).ready(function(){
 	});
 		
 	$('.arrow').click(function(event){
-		$('.arrow,.header__menu,.header__close').addClass('active');
+		$('.arrow,.home__title,.header__menu,.header__close').addClass('active');
 	});
 	$('.header__close').click(function(event){
-		$('.arrow,.header__menu,.header__close').removeClass('active');
+		$('.arrow,.home__title,.header__menu,.header__close').removeClass('active');
 	});
 	
 	$('.onas__arrow').click(function(){
