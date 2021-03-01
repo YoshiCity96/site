@@ -5,14 +5,7 @@
 $(document).ready(function(){
 	
 	$('.header__burger').click(function(event){
-		$('.header__burger,.header__menu').toggleClass('active');
-	});
-		
-	$('.arrow').click(function(event){
-		$('.arrow,.home__title,.header__menu,.header__close').addClass('active');
-	});
-	$('.header__close').click(function(event){
-		$('.arrow,.home__title,.header__menu,.header__close').removeClass('active');
+		$('.header__poloska,.header__burger,.header__menu,.home__title').toggleClass('active');
 	});
 	
 	$('.onas__arrow').click(function(){
@@ -37,6 +30,27 @@ $(document).ready(function(){
 	
 });
 
+function theme(){
+	const toggleTheme = document.querySelector('.theme')
+	let el = document.documentElement
+	toggleTheme.addEventListener('click',() =>{
+		
+		if(el.hasAttribute('data-theme')){
+			el.removeAttribute('data-theme')
+			localStorage.removeItem('theme')
+		} else{
+			el.setAttribute('data-theme','white')
+			localStorage.setItem('theme','white')
+		}
+	
+	})
+
+	if(localStorage.getItem('theme') !=null){
+		el.setAttribute('data-theme','white')
+	}
+}
+
+theme()
 
 
 $(function(){
