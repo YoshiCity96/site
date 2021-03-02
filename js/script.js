@@ -52,6 +52,41 @@ function theme(){
 
 theme()
 
+function languageRu(){
+	const togglelanguageRu = document.querySelector('.home__button-ru')
+	let el = document.documentElement
+	togglelanguageRu.addEventListener('click',() =>{
+			el.removeAttribute('data-language')
+			localStorage.removeItem('language')
+	
+	})
+
+	if(localStorage.getItem('language') !=null){
+		el.setAttribute('data-language','ru')
+	}
+}
+
+languageRu()
+
+function languageEng(){
+	const togglelanguageEng = document.querySelector('.home__button-eng')
+	let el = document.documentElement
+	togglelanguageEng.addEventListener('click',() =>{
+		
+	
+			el.setAttribute('data-language','eng')
+			localStorage.setItem('language','eng')
+		
+	
+	})
+
+	if(localStorage.getItem('language') !=null){
+		el.setAttribute('data-language','eng')
+	}
+}
+
+languageEng()
+
 
 $(function(){
 	let filter=$("[data-filter]");

@@ -134,8 +134,8 @@ h6 {
 .header__burger {
   cursor: pointer;
   position: fixed;
-  right: 36px;
-  top: 43px;
+  right: 44px;
+  top: 42px;
   width: 32px;
   height: 20px;
   z-index: 3;
@@ -740,6 +740,24 @@ h6 {
   background-color: white;
 }
 
+:root[data-language='eng'] .home__button-eng {
+  color: black;
+  background-color: white;
+}
+
+:root[data-language='eng'] .home__button-ru {
+  color: white;
+  background-color: black;
+}
+
+:root[data-language='eng'] .ex {
+  display: block;
+}
+
+:root[data-language='eng'] .ex-ru {
+  display: none;
+}
+
 body {
   font-family: HelveticaNeueCyr;
 }
@@ -767,10 +785,47 @@ body {
   opacity: 0.4;
 }
 
-.home__title {
-  color: #f1f1f5;
+.home__language {
+  margin: 22px 0 0 1500px;
+}
+
+.home__button-ru {
+  width: 62.1px;
+  height: 46px;
+  padding: 10px;
+  background-color: white;
+  font-size: 21px;
   font-weight: bold;
-  font-size: 128px;
+  color: black;
+}
+
+.home__button-eng {
+  width: 62.1px;
+  height: 46px;
+  padding: 10px;
+  background-color: black;
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+}
+
+.home .ex {
+  display: none;
+  margin: 20px 0 0 1500px;
+  color: white;
+  font-size: 30px;
+}
+
+.home .ex-ru {
+  margin: 20px 0 0 1500px;
+  color: white;
+  font-size: 30px;
+}
+
+.home__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 440px 0 0 600px;
   -webkit-transition: all 2.2s ease 0s;
   -o-transition: all 2.2s ease 0s;
@@ -782,6 +837,64 @@ body {
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   opacity: 0;
+}
+
+.home .Pure {
+  position: relative;
+  color: bisque;
+  font-size: 132px;
+  font-weight: bold;
+}
+
+.home .Pure span {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 160px;
+  left: -90px;
+  background-color: white;
+  width: 180px;
+  height: 2px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.home .Pure:hover span {
+  width: 90px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.home .Vision {
+  position: relative;
+  color: bisque;
+  font-size: 132px;
+  font-weight: bold;
+}
+
+.home .Vision span {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  top: 160px;
+  right: -80px;
+  background-color: black;
+  width: 180px;
+  height: 2px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.home .Vision:hover span {
+  width: 90px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .home__menu {
