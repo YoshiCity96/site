@@ -30,18 +30,15 @@ $(document).ready(function(){
 	
 });
 
-function theme(){
-	const toggleTheme = document.querySelector('.theme')
+function themeBlack(){
+	const toggleThemeBlack = document.querySelector('.theme__black')
 	let el = document.documentElement
-	toggleTheme.addEventListener('click',() =>{
+	toggleThemeBlack.addEventListener('click',() =>{
 		
-		if(el.hasAttribute('data-theme')){
+		
 			el.removeAttribute('data-theme')
 			localStorage.removeItem('theme')
-		} else{
-			el.setAttribute('data-theme','white')
-			localStorage.setItem('theme','white')
-		}
+		
 	
 	})
 
@@ -50,7 +47,26 @@ function theme(){
 	}
 }
 
-theme()
+themeBlack()
+
+function themeWhite(){
+	const toggleThemeWhite = document.querySelector('.theme__white')
+	let el = document.documentElement
+	toggleThemeWhite.addEventListener('click',() =>{
+		
+		
+			el.setAttribute('data-theme','white')
+			localStorage.setItem('theme','white')
+		
+	
+	})
+
+	if(localStorage.getItem('theme') !=null){
+		el.setAttribute('data-theme','white')
+	}
+}
+
+themeWhite()
 
 function languageRu(){
 	const togglelanguageRu = document.querySelector('.home__button-ru')
