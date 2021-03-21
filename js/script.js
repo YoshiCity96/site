@@ -66,6 +66,12 @@ $('.footer__body').each(function(){
 	});
  });
 
+ $(function() {
+	$('.footer__arrow').click(function(){
+		$('html, body').animate({scrollTop:0}, 'slow');
+  });
+});
+
 function themeBlack(){
 	const toggleThemeBlack = document.querySelector('.theme__black')
 	let el = document.documentElement
