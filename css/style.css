@@ -1091,24 +1091,36 @@ h6 {
 }
 
 .working__title {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 70px;
+  margin: 0 0 400px 0;
   font-size: 72px;
   font-weight: 300;
   color: white;
 }
 
-.working__container {
-  width: auto;
-  height: 700px;
+.working__slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 6800px;
 }
 
-.working__wrapper {
-  padding: 100px 0 0 0;
+.working__slides :first-child {
+  margin: 0;
 }
 
 .working__slide {
-  max-width: 960px;
-  font-size: 30px;
-  color: white;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 300px;
+  margin: 0 0 0 200px;
+  min-width: 960px;
 }
 
 .working__number {

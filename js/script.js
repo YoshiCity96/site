@@ -9610,6 +9610,15 @@ $(document).ready(function(){
 	
 });
 
+
+
+$(window).on('scroll', function(){
+	var attrstyle = 'transform:translate3d(-' + (($(this).scrollTop() +200) - $('.working').offset().top) + 'px,' + '0px, 0px);';
+	$(".working__slide").attr('style', attrstyle);
+	console.log($(window).scrollTop() - $('.working').offset().top);
+});
+
+
 var catalogSlider = null;
 var mediaQuerySize = 1024;
 
