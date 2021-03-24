@@ -92,11 +92,13 @@
 	<main>
 		<div class="theme"></div>
 		<div class="content">
+			<div class="container-onas">
 			<div class="onas">
 		<div class="onas__title">Кто мы</div>
 		<div class="onas__subtitle">PureVision — независимое творческое объединение. Основано в 2016 году тремя неравнодушными к digital людьми. <br>
 			Наша цель — разработка простых и эффективных решений в веб сфере. </div>
 		<div class="onas__img-b"><img src="http://placehold.it/1900x900" /></div>
+	</div>
 		<div class="competence">
 			<div class="competence__row-1">
 				<div class="competence__title">Что дальше?</div>
@@ -164,16 +166,76 @@
 		</div>
 		<div class="working">
 			<div class="working__title">Как мы работаем.</div>
-			<div class="working__slider">
-			<div class="1"></div>
-			<div class="2"></div>
-			<div class="3"></div>
-			<div class="4"></div>
-			<div class="5"></div>
-			<div class="6"></div>
-			<div class="7"></div>
+			<!-- Slider main container -->
+<div class="swiper-container working__container">
+	<!-- Additional required wrapper -->
+	<div class="swiper-wrapper working__wrapper">
+	  <!-- Slides -->
+	  <div class="swiper-slide  working__slide">
+		  <div class="working__number">01.</div>
+		  <div class="working__subtitle">Проводим конф-колл.</div>
+		  <div class="working__text">Знакомимся, узнаем о вашем проекте все. После встречи мы подготовим несколько референсов и составим структуру проекта.  
+			  <p>Перед нашей с вами встречей посмотрите вопросы из нашего брифа.</p>
+		  </div>
+		  <div class="working__link">Посмотреть бриф</div>
+	  </div>
+	  <div class="swiper-slide  working__slide">
+		<div class="working__number">02.</div>
+		<div class="working__subtitle">Выстраиваем коммуникацию.</div>
+		<div class="working__text">Клиент имеет доступ к чату, трекеру задач, отчетам и файлам в облаке по его проекту. Все это доступно в любой момент времени. Так же у клиента будет аккаунт-менеджер, который поможет разобраться в отчетах, и вопросах о документации и расходах. При этом команда работает с клиентом напрямую — для этого не нужен менеджер.
+			
 		</div>
+		
+	</div>
+	<div class="swiper-slide  working__slide">
+		<div class="working__number">03.</div>
+		<div class="working__subtitle">Заключаем договор.</div>
+		<div class="working__text">Закрепляем основные положения сотрудничества. Составляем приложение на каждый этап разработки, определяя сроки и стоимость. Таким образом мы можем идентифицировать и устранить основные риски, а также мы и вы сохраним гибкость в проекте. После каждого выполненного приложения клиент получает отчет о работе и обсуждает с командой прогресс проекта. 
+			<p>Допускаем работу и без договора.</p>
 		</div>
+		<div class="working__link">Пример договора</div>
+	</div>
+	<div class="swiper-slide  working__slide">
+		<div class="working__number">04.</div>
+		<div class="working__subtitle">Начинаем прототипирование.</div>
+		<div class="working__text">Предоставляем скелет проекта. Вы сможете увидеть, как будут расположены основные блоки и другой контент. На каждый такой этап разработки мы выделяем 2-ух специалистов и более. На данном этапе, например, это — два дизайнера.   
+			
+		</div>
+		<div class="working__link">Пример прототипа</div>
+	</div>
+	<div class="swiper-slide  working__slide">
+		<div class="working__number">05.</div>
+		<div class="working__subtitle">Разрабатываем концепцию.</div>
+		<div class="working__text">Разрабатываем несколько тематических вариантов дизайна на отдельных блоках. Утверждаем понравившуюся вам концепцию. На предыдущем и данном этапе мы допускаем, что требования могут меняться и обеспечиваем тесный контакт команды и клиента. А также используем компоненты в процессе разработки.
+			
+		</div>
+		<div class="working__link">Пример концепции</div>
+	</div>
+	<div class="swiper-slide  working__slide">
+		<div class="working__number">06.</div>
+		<div class="working__subtitle">Вносим правки.</div>
+		<div class="working__text">Перед тем, как отправить макет программистам, проверяем его на наличие ошибок. Предоставляем готовый макет клиенту. Если нужно вносим правки, которые мотивированно обоснованы. Отрабатываем 3 итерации бесплатно, за последующие выставляем отдельный счет.  
+			
+		</div>
+		
+	</div>
+	<div class="swiper-slide  working__slide">
+		<div class="working__number">07.</div>
+		<div class="working__subtitle">Программируем.</div>
+		<div class="working__text">Пишем код, разрабатываем front-end и back-end. Оптимизируем сайт, настраиваем панель администратора, составляем инструкцию, предоставляем гарантию и поддержку после завершения работы над проектом.
+		
+		</div>
+		
+	</div>
+	  
+	</div>
+	
+ 
+	<!-- If we need scrollbar -->
+	<div class="swiper-scrollbar"></div>
+ </div>
+		</div>
+		
 		<div class="clients">
 			<div class="clients__title">Клиенты, с которыми мы сотрудничаем.</div>
 			<div class="clients__img">
@@ -201,6 +263,7 @@
 			</div>
 			<div class="clients__end">Мы сотрудничаем с вами для того, чтобы воплотить ваше видение в жизнь и создать запоминающийся дизайн, соответствующий вашему уникальному бренду.</div>
 		</div>
+	</div>
 	</div>
 
 	</main>
