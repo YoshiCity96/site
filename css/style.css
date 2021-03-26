@@ -2252,6 +2252,7 @@ body {
 }
 
 .ticker {
+  position: relative;
   overflow: hidden;
   max-width: 100%;
   height: 800px;
@@ -2261,184 +2262,189 @@ body {
   color: white;
 }
 
-.ticker__row-1 {
-  position: relative;
-}
-
 .ticker_row-11 {
   position: absolute;
-  -webkit-animation: row-11 22s linear 2s infinite normal none;
-          animation: row-11 22s linear 2s infinite normal none;
+  -webkit-animation: row-11 22s linear -15s infinite normal none;
+          animation: row-11 22s linear -15s infinite normal none;
   left: -300px;
 }
 
 .ticker_row-12 {
   position: absolute;
   left: -300px;
-  -webkit-animation: row-12 22s linear 14s infinite normal none;
-          animation: row-12 22s linear 14s infinite normal none;
-}
-
-.ticker__row-2 {
-  position: relative;
-  top: 300px;
+  -webkit-animation: row-12 22s linear -4s infinite normal none;
+          animation: row-12 22s linear -4s infinite normal none;
 }
 
 .ticker_row-21 {
   position: absolute;
-  -webkit-animation: row-21 22s linear 6s infinite normal none;
-          animation: row-21 22s linear 6s infinite normal none;
+  -webkit-animation: row-21 22s linear -11s infinite normal none;
+          animation: row-21 22s linear -11s infinite normal none;
   left: -400px;
 }
 
 .ticker_row-22 {
   position: absolute;
-  -webkit-animation: row-22 22s linear 17s infinite normal none;
-          animation: row-22 22s linear 17s infinite normal none;
+  -webkit-animation: row-22 22s linear -0s infinite normal none;
+          animation: row-22 22s linear -0s infinite normal none;
   left: -400px;
-}
-
-.ticker__row-3 {
-  position: relative;
-  top: 600px;
 }
 
 .ticker_row-31 {
   position: absolute;
-  -webkit-animation: row-31 22s linear 3s infinite normal none;
-          animation: row-31 22s linear 3s infinite normal none;
+  -webkit-animation: row-31 22s linear -14s infinite normal none;
+          animation: row-31 22s linear -14s infinite normal none;
   left: -300px;
 }
 
 .ticker_row-32 {
   position: absolute;
-  -webkit-animation: row-32 22s linear 14s infinite normal none;
-          animation: row-32 22s linear 14s infinite normal none;
+  -webkit-animation: row-32 22s linear -3s infinite normal none;
+          animation: row-32 22s linear -3s infinite normal none;
   left: -300px;
-}
-
-.ticker:hover .ticker__row-1 .ticker__row-11 {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
 }
 
 @-webkit-keyframes row-11 {
   0% {
+    top: 50px;
     left: -300px;
   }
 
   100% {
-    left: 100%;
+    top: 50px;
+    left: 105%;
   }
 }
 
 @keyframes row-11 {
   0% {
+    top: 50px;
     left: -300px;
   }
 
   100% {
-    left: 100%;
+    top: 50px;
+    left: 105%;
   }
 }
 
 @-webkit-keyframes row-12 {
   0% {
+    top: 50px;
     left: -300px;
   }
 
   100% {
-    left: 100%;
+    top: 50px;
+    left: 105%;
   }
 }
 
 @keyframes row-12 {
   0% {
+    top: 50px;
     left: -300px;
   }
 
   100% {
-    left: 100%;
+    top: 50px;
+    left: 105%;
   }
 }
 
 @-webkit-keyframes row-21 {
   0% {
+    top: 350px;
     left: -400px;
   }
 
   100% {
-    left: 100%;
+    top: 350px;
+    left: 110%;
   }
 }
 
 @keyframes row-21 {
   0% {
+    top: 350px;
     left: -400px;
   }
 
   100% {
-    left: 100%;
+    top: 350px;
+    left: 110%;
   }
 }
 
 @-webkit-keyframes row-22 {
   0% {
+    top: 350px;
     left: -400px;
   }
 
   100% {
-    left: 100%;
+    top: 350px;
+    left: 110%;
   }
 }
 
 @keyframes row-22 {
   0% {
+    top: 350px;
     left: -400px;
   }
 
   100% {
-    left: 100%;
+    top: 350px;
+    left: 110%;
   }
 }
 
 @-webkit-keyframes row-31 {
   0% {
+    top: 650px;
     left: -300px;
   }
 
   100% {
-    left: 100%;
+    top: 650px;
+    left: 105%;
   }
 }
 
 @keyframes row-31 {
   0% {
+    top: 650px;
     left: -300px;
   }
 
   100% {
-    left: 100%;
+    top: 650px;
+    left: 105%;
   }
 }
 
 @-webkit-keyframes row-32 {
   0% {
+    top: 650px;
     left: -300px;
   }
 
   100% {
-    left: 100%;
+    top: 650px;
+    left: 105%;
   }
 }
 
 @keyframes row-32 {
   0% {
+    top: 650px;
     left: -300px;
   }
 
   100% {
-    left: 100%;
+    top: 650px;
+    left: 105%;
   }
 }
 
