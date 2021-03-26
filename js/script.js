@@ -1026,10 +1026,12 @@ module.exports = Parallax;
 $(document).ready(function(){
 	
 	$('.header__burger').click(function(event){
-		$('.header__poloska,.header__burger,.header__menu,.home__title').toggleClass('active');
+		$('.header__poloska,.header__burger,.header__menu').toggleClass('active');
 	});
 
-	
+	$('.open__title').click(function(event){
+		$(this).toggleClass('active').next().slideToggle(300);
+	})
 	
 	
 	
@@ -1062,8 +1064,7 @@ $(document).ready(function(){
 	
 });
 
-var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);
+
 
 
 
@@ -1115,12 +1116,25 @@ $(window).on('scroll', function(){
 	
 
 $(window).scroll(function(){
-	if (($(window).scrollTop() > 5600) && ($(window).scrollTop() < 12450)) {
+	if (($(window).scrollTop() > 5600) && ($(window).scrollTop() < 12500)) {
 		 $('.working__body').addClass('working__body-fixed');
 		 
 	}
 	else{
+		
 		$('.working__body').removeClass('working__body-fixed');
+		 
+	}
+});
+
+$(window).scroll(function(){
+	if (($(window).scrollTop() > 4000) && ($(window).scrollTop() < 12350)) {
+		
+		 $('.working__body').removeClass('working__body-opasity');
+	}
+	else{
+		$('.working__body').addClass('working__body-opasity');
+		
 		 
 	}
 });
@@ -1357,4 +1371,5 @@ languageEng()
 
 
 	
-	
+	var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);
