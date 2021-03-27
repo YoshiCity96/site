@@ -1112,18 +1112,14 @@ h6 {
   transition: all 0.3s ease 0s;
   overflow: hidden;
   max-width: 1600px;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  opacity: 1;
 }
 
-.working__body-scale {
+.working__body-opacity {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
+  opacity: 0;
 }
 
 .working__body-fixed {

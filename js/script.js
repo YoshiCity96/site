@@ -1118,7 +1118,7 @@ $(window).on('scroll', function(){
 	
 
 $(window).scroll(function(){
-	if (($(window).scrollTop() > 5600) && ($(window).scrollTop() < 12950)) {
+	if (($(window).scrollTop() > 5600) && ($(window).scrollTop() < 12930)) {
 		 $('.working__body').addClass('working__body-fixed');
 		 
 	}
@@ -1132,10 +1132,10 @@ $(window).scroll(function(){
 $(window).scroll(function(){
 	if ($(window).scrollTop() < 12720) {
 		
-		 $('.working__body').removeClass('working__body-scale');
+		 $('.working__body').removeClass('working__body-opacity');
 	}
 	else{
-		$('.working__body').addClass('working__body-scale');
+		$('.working__body').addClass('working__body-opacity');
 		
 		 
 	}
