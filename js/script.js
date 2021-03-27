@@ -1031,7 +1031,9 @@ $(document).ready(function(){
 
 	$('.open__title').click(function(event){
 		$(this).toggleClass('active').next().slideToggle(300);
-	})
+	});
+
+	
 	
 	
 	
@@ -1063,6 +1065,7 @@ $(document).ready(function(){
 	
 	
 });
+
 
 
 
@@ -1140,6 +1143,13 @@ $(window).scroll(function(){
 		 
 	}
 });
+
+
+
+
+
+
+
 
 var catalogSlider = null;
 var mediaQuerySize = 1024;
@@ -1373,5 +1383,5 @@ languageEng()
 
 
 	
-	var scene = document.getElementById('scene');
+var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene);
