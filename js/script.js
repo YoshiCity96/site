@@ -1107,16 +1107,18 @@ $('.img-parallax').each(function(){
 
 
 $(window).on('scroll', function(){
-	var attrstyle = 'transform:translate3d(-' + (($(this).scrollTop() +200) - $('.working').offset().top) + 'px,' + '0px, 0px);';
+	var attrstyle = 'transform:translate3d(-' + (($(this).scrollTop()) - $('.working').offset().top) + 'px,' + '0px, 0px);';
+	if(($(window).scrollTop() < 12650)){
 	$(".working__slide").attr('style', attrstyle);
-	console.log($(window).scrollTop() - $('.working').offset().top);
+	
+}
 });
 
 
 	
 
 $(window).scroll(function(){
-	if (($(window).scrollTop() > 5600) && ($(window).scrollTop() < 12500)) {
+	if (($(window).scrollTop() > 5600) && ($(window).scrollTop() < 12950)) {
 		 $('.working__body').addClass('working__body-fixed');
 		 
 	}
@@ -1128,12 +1130,12 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-	if (($(window).scrollTop() > 4000) && ($(window).scrollTop() < 12350)) {
+	if ($(window).scrollTop() < 12720) {
 		
-		 $('.working__body').removeClass('working__body-opasity');
+		 $('.working__body').removeClass('working__body-scale');
 	}
 	else{
-		$('.working__body').addClass('working__body-opasity');
+		$('.working__body').addClass('working__body-scale');
 		
 		 
 	}
