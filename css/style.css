@@ -94,16 +94,16 @@ h6 {
 
 @font-face {
   font-family: 'HelveticaNeueCyr';
-  src: url("../fonts/HelveticaNeueCyr-Bold.eot");
-  src: local("HelveticaNeueCyr-Bold"), url("../fonts/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+  src: url("../fonts/helveticaneuecyr-bold.eot");
+  src: local("☺"), url("../fonts/helveticaneuecyr-bold.woff") format("woff"), url("../fonts/helveticaneuecyr-bold.ttf") format("truetype"), url("../fonts/helveticaneuecyr-bold.svg") format("svg");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'HelveticaNeueCyr';
-  src: url("../fonts/HelveticaNeueCyr-Light.eot");
-  src: local("HelveticaNeueCyr-Light"), url("../fonts/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
+  src: url("../fonts/helveticaneuecyr-light.eot");
+  src: local("☺"), url("../fonts/helveticaneuecyr-light.woff") format("woff"), url("../fonts/helveticaneuecyr-light.ttf") format("truetype"), url("../fonts/helveticaneuecyr-light.svg") format("svg");
   font-weight: 300;
   font-style: normal;
 }
@@ -421,13 +421,16 @@ h6 {
 }
 
 .header__link a {
+  position: relative;
   display: inline-block;
   line-height: 1;
   color: #ffffff;
 }
 
 .header__link a:after {
+  position: absolute;
   display: block;
+  right: 0;
   content: "";
   height: 3px;
   width: 100%;
@@ -563,6 +566,10 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.page__arrow img {
+  background-color: red;
 }
 
 .page__arrow p {
@@ -1484,6 +1491,7 @@ h6 {
 }
 
 .competence__text {
+  line-height: 1.25;
   font-size: 36px;
   font-weight: 300;
   color: white;
@@ -2882,25 +2890,25 @@ body {
 
 .make__columns :first-child {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 20%;
-          flex: 0 1 20%;
+      -ms-flex: 0 1 22%;
+          flex: 0 1 22%;
 }
 
 .make__columns :last-child {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 80%;
-          flex: 0 1 80%;
+      -ms-flex: 0 1 78%;
+          flex: 0 1 78%;
 }
 
 .make__title {
+  line-height: 1.33;
   margin: 0 0 380px 0;
   font-size: 72px;
-  font-weight: bold;
+  font-weight: 300;
   color: white;
 }
 
 .make__link {
-  text-decoration: underline;
   font-size: 36px;
   font-weight: 300;
 }
@@ -2931,7 +2939,7 @@ body {
 }
 
 .make__text {
-  margin: 190px 0 0 0;
+  margin: 253px 0 0 0;
   line-height: 1.38;
   font-size: 24px;
   font-weight: 300;
@@ -2939,11 +2947,12 @@ body {
 }
 
 .make__text :first-child {
-  padding: 0 0 40px 0px;
+  max-width: 610px;
 }
 
 .make__text :last-child {
-  padding: 0 0 0 420px;
+  max-width: 630px;
+  margin: 0 0 0 600px;
 }
 
 .ticker {
@@ -2980,8 +2989,8 @@ body {
 
 .ticker_row-22 {
   position: absolute;
-  -webkit-animation: row-22 22s linear -0s infinite normal none;
-          animation: row-22 22s linear -0s infinite normal none;
+  -webkit-animation: row-22 22s linear 0s infinite normal none;
+          animation: row-22 22s linear 0s infinite normal none;
   left: -400px;
 }
 
@@ -3002,48 +3011,48 @@ body {
 @-webkit-keyframes row-11 {
   0% {
     top: 50px;
-    left: -300px;
+    left: -400px;
   }
 
   100% {
     top: 50px;
-    left: 105%;
+    left: 110%;
   }
 }
 
 @keyframes row-11 {
   0% {
     top: 50px;
-    left: -300px;
+    left: -400px;
   }
 
   100% {
     top: 50px;
-    left: 105%;
+    left: 110%;
   }
 }
 
 @-webkit-keyframes row-12 {
   0% {
     top: 50px;
-    left: -300px;
+    left: -400px;
   }
 
   100% {
     top: 50px;
-    left: 105%;
+    left: 110%;
   }
 }
 
 @keyframes row-12 {
   0% {
     top: 50px;
-    left: -300px;
+    left: -400px;
   }
 
   100% {
     top: 50px;
-    left: 105%;
+    left: 110%;
   }
 }
 
@@ -3098,48 +3107,48 @@ body {
 @-webkit-keyframes row-31 {
   0% {
     top: 650px;
-    left: -300px;
+    left: -400px;
   }
 
   100% {
     top: 650px;
-    left: 105%;
+    left: 110%;
   }
 }
 
 @keyframes row-31 {
   0% {
     top: 650px;
-    left: -300px;
+    left: -400px;
   }
 
   100% {
     top: 650px;
-    left: 105%;
+    left: 110%;
   }
 }
 
 @-webkit-keyframes row-32 {
   0% {
     top: 650px;
-    left: -300px;
+    left: -400px;
   }
 
   100% {
     top: 650px;
-    left: 105%;
+    left: 110%;
   }
 }
 
 @keyframes row-32 {
   0% {
     top: 650px;
-    left: -300px;
+    left: -400px;
   }
 
   100% {
     top: 650px;
-    left: 105%;
+    left: 110%;
   }
 }
 
