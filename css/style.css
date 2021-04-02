@@ -556,25 +556,10 @@ h6 {
   color: white;
 }
 
-.page__scroll::before {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  top: 63px;
-  left: 33px;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 12px solid white;
-  -webkit-animation: arrow-2  1s  infinite;
-          animation: arrow-2  1s  infinite;
-}
-
 .page__scroll::after {
   content: '';
   position: absolute;
-  top: -64px;
+  top: -59px;
   left: 41px;
   height: 127px;
   width: 3px;
@@ -588,22 +573,10 @@ h6 {
   position: relative;
 }
 
-.page__arrow::before {
-  content: '';
-  position: absolute;
-  top: 45px;
-  left: 38px;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 12px solid #7a7a7a;
-}
-
 .page__arrow::after {
   content: '';
   position: absolute;
-  top: -82px;
+  top: -77px;
   left: 46px;
   height: 127px;
   width: 3px;
