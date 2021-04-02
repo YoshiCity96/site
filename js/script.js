@@ -10606,6 +10606,12 @@ $(document).ready(function(){
 	});
 
 	$(function(){
+		let filter=$("[data-filter]");
+			filter.on("click", function(event){
+				event.preventDefault();
+				
+		
+				let cat= $(this).data('filter');
 
 					$("[data-filter]").each(function(){
 						let workFilter= $(this).data('filter');
@@ -10620,7 +10626,7 @@ $(document).ready(function(){
 				
 				
 			});
-		
+		});
 	
 	
 	
