@@ -10598,14 +10598,29 @@ module.exports = Parallax;
 $(document).ready(function(){
 	
 	$('.header__burger').click(function(event){
-		$('.header__poloska,.header__burger,.header__menu').toggleClass('active');
+		$('.header__logo,.header__poloska,.header__burger,.header__menu').toggleClass('active');
 	});
 
 	$('.open__title').click(function(event){
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
 
-	
+	$(function(){
+
+					$("[data-filter]").each(function(){
+						let workFilter= $(this).data('filter');
+						
+						if(workFilter !=cat){
+							$(this).removeClass('active');
+							
+						} else{
+							$(this).addClass('active');
+						}
+					});
+				
+				
+			});
+		
 	
 	
 	
@@ -10775,6 +10790,43 @@ $('.img-parallax').each(function(){
 		 return { top: rect.top + scrollTop, left: rect.left + scrollLeft}
 	 }
  }
+
+ const footerItems = document.querySelectorAll('.footer');
+if(footerItems.length > 0){
+	window.addEventListener('scroll', footerOnScroll);
+	function footerOnScroll(){
+		for(let index = 0; index < footerItems.length; index++) {
+			const footerItem = footerItems[index];
+			const footerItemHeight = footerItem.offsetHeight;
+			const footerItemOffset = offset(footerItem).top;
+			const footerStart = 1;
+
+			let footerItemPoint = window.innerHeight - footerItemHeight/footerStart;
+			if(footerItemHeight > window.innerHeight){
+				footerItemPoint = window.innerHeight - window.innerHeight/footerStart;
+			}
+
+			if(pageYOffset > footerItemOffset - footerItemPoint -5){
+				
+				$(".header__logo").addClass('_footer');
+				$(".header__burger").addClass('_footer');
+
+			} else{
+				$(".header__logo").removeClass('_footer');
+				$(".header__burger").removeClass('_footer');
+			}
+
+			
+		}
+	}
+
+	function offset(el){
+		const rect = el.getBoundingClientRect(),
+		scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+		scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		return { top: rect.top + scrollTop, left: rect.left + scrollLeft}
+	}
+}
 
 
 

@@ -230,6 +230,24 @@ h6 {
   width: 100%;
 }
 
+.header__burger._footer span {
+  background-color: black;
+}
+
+.header__burger._footer .header__poloska {
+  background-color: black;
+}
+
+.header__burger._footer::before,
+.header__burger._footer::after {
+  background-color: black;
+}
+
+.header__burger._footer.active::before,
+.header__burger._footer.active::after {
+  background-color: white;
+}
+
 .header__menu {
   position: fixed;
   top: 0;
@@ -246,16 +264,13 @@ h6 {
 }
 
 .header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: fixed;
   top: 25px;
   left: 48px;
   z-index: 4;
-  color: #f1f1f5;
-  font-size: 36px;
-  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header__logo:hover p,
@@ -292,6 +307,36 @@ h6 {
   margin: 15px 0 0 13px;
   font-size: 18px;
   font-weight: bold;
+  color: #f1f1f5;
+}
+
+.header__logo._footer.active .header__pure {
+  background-color: white;
+}
+
+.header__logo._footer.active .header__pure p {
+  color: black;
+}
+
+.header__logo._footer.active .header__vision {
+  color: white;
+}
+
+.header__logo._footer .header__pure {
+  width: 50px;
+  height: 50px;
+  padding: 10px 0 0 0;
+  background-color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header__logo._footer .header__pure p {
+  color: white;
+}
+
+.header__logo._footer .header__vision {
+  color: black;
 }
 
 .header__language {
@@ -413,7 +458,7 @@ h6 {
 .header__link a {
   position: relative;
   display: inline-block;
-  line-height: 1;
+  line-height: 1.3;
   color: #ffffff;
 }
 
@@ -422,16 +467,16 @@ h6 {
   display: block;
   right: 0;
   content: "";
-  height: 3px;
+  height: 2px;
   width: 100%;
   background-color: white;
-  -webkit-transition: width 0.4s ease-in-out;
-  -o-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.2s ease-in-out;
+  -o-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 
 .header__link_main a {
-  color: gray;
+  color: #7a7a7a;
 }
 
 .header__link_main a:after {
@@ -439,7 +484,7 @@ h6 {
 }
 
 .header__link a:hover {
-  color: gray;
+  color: #7a7a7a;
 }
 
 .header__link a:hover:after {
@@ -478,24 +523,27 @@ h6 {
 }
 
 .header__item a {
+  position: relative;
   display: inline-block;
-  line-height: 1;
+  line-height: 1.3;
   color: #ffffff;
 }
 
 .header__item a:after {
+  position: absolute;
   display: block;
+  right: 0;
   content: "";
-  height: 2px;
+  height: 1px;
   width: 100%;
   background-color: white;
-  -webkit-transition: width 0.4s ease-in-out;
-  -o-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.2s ease-in-out;
+  -o-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 
 .header__item a:hover {
-  color: gray;
+  color: #7a7a7a;
 }
 
 .header__item a:hover:after {
@@ -516,24 +564,27 @@ h6 {
 }
 
 .other__link a {
+  position: relative;
   display: inline-block;
-  line-height: 1;
+  line-height: 1.3;
   color: #ffffff;
 }
 
 .other__link a:after {
+  position: absolute;
   display: block;
+  right: 0;
   content: "";
-  height: 2px;
+  height: 1px;
   width: 100%;
   background-color: white;
-  -webkit-transition: width 0.4s ease-in-out;
-  -o-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.2s ease-in-out;
+  -o-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 
 .other__link a:hover {
-  color: gray;
+  color: #7a7a7a;
 }
 
 .other__link a:hover:after {
@@ -967,15 +1018,16 @@ h6 {
 }
 
 .kontakt__text span {
-  line-height: 1.5;
-  font-size: 18px;
+  line-height: 1.13;
+  font-size: 24px;
   font-weight: 300;
   color: #7a7a7a;
 }
 
 .kontakt__text p {
+  padding: 15px 0 15px 0;
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 300;
   color: white;
 }
@@ -1003,9 +1055,13 @@ h6 {
   padding: 0 0 0 37px;
 }
 
+.kontakt .social__item p:hover {
+  color: #7a7a7a;
+}
+
 .kontakt .social p {
-  padding: 0 0 15px 0;
-  font-size: 21px;
+  padding: 0 0 19px 0;
+  font-size: 24px;
   font-weight: 300;
   color: white;
 }
@@ -1044,19 +1100,22 @@ h6 {
 }
 
 .form__item textarea {
-  margin: -60px 0 0 0;
-  height: 100px;
+  margin: -40px 0 0 0;
+  height: 80px;
   resize: none;
-  padding: 10px;
 }
 
 .form__input {
-  font-size: 16px;
+  font-size: 24px;
+  font-weight: 300;
   background-color: black;
   width: 400px;
   height: 40px;
-  padding: 0 10px;
   border-bottom: 1px solid white;
+  color: #7a7a7a;
+}
+
+.form__input:focus {
   color: white;
 }
 
@@ -1074,8 +1133,8 @@ h6 {
 
 .form__politik {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 78%;
-          flex: 0 1 78%;
+      -ms-flex: 0 1 79%;
+          flex: 0 1 79%;
 }
 
 .form__politik p {
@@ -1086,24 +1145,27 @@ h6 {
 }
 
 .form__politik a {
+  position: relative;
   display: inline-block;
-  line-height: 1;
+  line-height: 1.3;
   color: #ffffff;
 }
 
 .form__politik a:after {
+  position: absolute;
   display: block;
+  right: 0;
   content: "";
-  height: 2px;
+  height: 1 px;
   width: 100%;
   background-color: white;
-  -webkit-transition: width 0.4s ease-in-out;
-  -o-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.2s ease-in-out;
+  -o-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 
 .form__politik a:hover {
-  color: gray;
+  color: #7a7a7a;
 }
 
 .form__politik a:hover:after {
@@ -1132,12 +1194,16 @@ h6 {
   top: 0;
 }
 
+.form__button:hover {
+  color: #7a7a7a;
+}
+
 .form__button::after {
   content: "➝";
   position: absolute;
   padding: 0 10px 0 0;
-  top: 7px;
-  right: -70px;
+  top: 9px;
+  right: -50px;
   font-size: 17px;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -1261,7 +1327,7 @@ h6 {
 
 .work__options {
   padding: 0 0 0 45px;
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 300;
   margin: 0 0 100px 0;
 }
@@ -1270,7 +1336,7 @@ h6 {
   color: white;
 }
 
-.work__options a:hover {
+.work__options a.active {
   color: #7a7a7a;
 }
 
@@ -1670,31 +1736,33 @@ h6 {
 
 .working__link {
   margin: 45px 0 0 0;
-  text-decoration: underline;
   font-size: 24px;
   font-weight: 300;
   color: white;
 }
 
 .working__link a {
+  position: relative;
   display: inline-block;
-  line-height: 1;
+  line-height: 1.3;
   color: #ffffff;
 }
 
 .working__link a:after {
+  position: absolute;
   display: block;
+  right: 0;
   content: "";
-  height: 2px;
+  height: 1px;
   width: 100%;
   background-color: white;
-  -webkit-transition: width 0.4s ease-in-out;
-  -o-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.2s ease-in-out;
+  -o-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 
 .working__link a:hover {
-  color: gray;
+  color: #7a7a7a;
 }
 
 .working__link a:hover:after {
@@ -1775,24 +1843,27 @@ h6 {
 }
 
 .clients__link a {
+  position: relative;
   display: inline-block;
-  line-height: 1;
+  line-height: 1.3;
   color: #ffffff;
 }
 
 .clients__link a:after {
+  position: absolute;
   display: block;
+  right: 0;
   content: "";
-  height: 2px;
+  height: 1px;
   width: 100%;
   background-color: white;
-  -webkit-transition: width 0.4s ease-in-out;
-  -o-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.2s ease-in-out;
+  -o-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 
 .clients__link a:hover {
-  color: gray;
+  color: #7a7a7a;
 }
 
 .clients__link a:hover:after {
@@ -1895,7 +1966,7 @@ h6 {
 }
 
 .download {
-  margin: 142px 0 0 0;
+  margin: 142px 0 500px 0;
 }
 
 .download__link {
@@ -1915,6 +1986,10 @@ h6 {
 .download__link:hover {
   color: gray;
   border-bottom: 1px solid gray;
+}
+
+.download__link:hover .download__img {
+  display: block;
 }
 
 .download__link:hover a {
@@ -1972,6 +2047,14 @@ h6 {
   left: 0;
 }
 
+.download__img {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: -120px;
+  left: 700px;
+}
+
 .culture {
   max-width: 1600px;
   margin: 200px auto 300px 220px;
@@ -2000,6 +2083,7 @@ h6 {
 
 .culture__text {
   margin: 50px 0 0 0;
+  line-height: 1.25;
   font-size: 36px;
   font-weight: 300;
   color: white;
@@ -2007,7 +2091,7 @@ h6 {
 
 .culture__data {
   margin: 45px 0 0 0;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300;
   color: #7a7a7a;
 }
@@ -2494,12 +2578,12 @@ button.swiper-pagination-bullet {
 }
 
 .open__title:hover {
-  color: gray;
+  color: #7a7a7a;
 }
 
 .open__title:hover::before,
 .open__title:hover::after {
-  background-color: gray;
+  background-color: #7a7a7a;
 }
 
 .open__title::before,
@@ -2579,24 +2663,27 @@ button.swiper-pagination-bullet {
 }
 
 .open__text a {
+  position: relative;
   display: inline-block;
-  line-height: 1;
+  line-height: 1.3;
   color: #ffffff;
 }
 
 .open__text a:after {
+  position: absolute;
   display: block;
+  right: 0;
   content: "";
-  height: 2px;
+  height: 1px;
   width: 100%;
   background-color: white;
-  -webkit-transition: width 0.4s ease-in-out;
-  -o-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.2s ease-in-out;
+  -o-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 
 .open__text a:hover {
-  color: gray;
+  color: #7a7a7a;
 }
 
 .open__text a:hover:after {
@@ -2611,7 +2698,7 @@ button.swiper-pagination-bullet {
 }
 
 .open:hover {
-  border: 1px solid gray;
+  border: 1px solid #7a7a7a;
 }
 
 body {
@@ -2840,7 +2927,7 @@ body {
 .portfolio__title {
   margin: 0 0 97px 0;
   font-size: 72px;
-  font-weight: bold;
+  font-weight: 300;
   color: white;
 }
 
@@ -2959,24 +3046,27 @@ body {
 }
 
 .make__link a {
+  position: relative;
   display: inline-block;
-  line-height: 1;
+  line-height: 1.3;
   color: #ffffff;
 }
 
 .make__link a:after {
+  position: absolute;
   display: block;
+  right: 0;
   content: "";
-  height: 2px;
+  height: 1px;
   width: 100%;
   background-color: white;
-  -webkit-transition: width 0.4s ease-in-out;
-  -o-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.2s ease-in-out;
+  -o-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 
 .make__link a:hover {
-  color: gray;
+  color: #7a7a7a;
 }
 
 .make__link a:hover:after {
@@ -3216,7 +3306,8 @@ body {
 
 .news__title {
   font-size: 72px;
-  font-weight: bold;
+  line-height: 1.33;
+  font-weight: 300;
   color: white;
 }
 
@@ -3238,5 +3329,9 @@ body {
 .news__item span {
   font-size: 15px;
   font-weight: 300;
+  color: #7a7a7a;
+}
+
+.news__item:hover p {
   color: #7a7a7a;
 }
