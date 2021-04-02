@@ -10688,11 +10688,11 @@ $('.img-parallax').each(function(){
 			 
  
 			 if(pageYOffset > 100){
-				$(".page__arrow").addClass('_hide');
+				$(".page__scroll").addClass('_hide');
 				$(".page__01").addClass('_visible');
  
 			 } else{
-				$(".page__arrow").removeClass('_hide');
+				$(".page__scroll").removeClass('_hide');
 				$(".page__01").removeClass('_visible');
 			}
 
