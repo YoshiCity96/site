@@ -1345,6 +1345,9 @@ h6 {
   -o-transition: 1s;
   transition: 1s;
   display: block;
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .work__item p {
@@ -1376,9 +1379,9 @@ h6 {
 }
 
 .work__item:hover img {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 .work__item:hover p {
@@ -1439,13 +1442,13 @@ h6 {
 }
 
 .branding__items_1 {
-  -ms-grid-columns: 500px 500px 300px;
-  grid-template-columns: 500px 500px 300px;
+  -ms-grid-columns: 500px 700px;
+  grid-template-columns: 500px 700px;
 }
 
 .branding__items_2 {
-  -ms-grid-columns: 800px 550px;
-  grid-template-columns: 800px 550px;
+  -ms-grid-columns: 300px;
+  grid-template-columns: 300px;
 }
 
 .digital__items {
@@ -1468,8 +1471,8 @@ h6 {
 }
 
 .content-production__items_1 {
-  -ms-grid-columns: 500px 300px;
-  grid-template-columns: 500px 300px;
+  -ms-grid-columns: 300px;
+  grid-template-columns: 300px;
 }
 
 .web-develop__items {
@@ -1480,13 +1483,18 @@ h6 {
 }
 
 .web-develop__items_1 {
+  -ms-grid-columns: 900px 500px;
+  grid-template-columns: 900px 500px;
+}
+
+.web-develop__items_2 {
   -ms-grid-columns: 850px 350px 300px;
   grid-template-columns: 850px 350px 300px;
 }
 
-.web-develop__items_2 {
-  -ms-grid-columns: 300px;
-  grid-template-columns: 300px;
+.web-develop__items_3 {
+  -ms-grid-columns: 300px 500px;
+  grid-template-columns: 300px 500px;
 }
 
 .hide {
@@ -2979,6 +2987,9 @@ body {
   -o-transition: 1s;
   transition: 1s;
   display: block;
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .portfolio__item p {
@@ -3010,9 +3021,9 @@ body {
 }
 
 .portfolio__item:hover img {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 .portfolio__item:hover p {
