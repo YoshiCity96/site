@@ -2758,22 +2758,20 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #a8a8a6;
-  border-radius: 10px;
-  /* цвет дорожки */
+  background: white;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #323233;
+  background-color: #3b3b3b;
   /* цвет плашки */
   border-radius: 7px;
   /* закругления плашки */
-  border: 2px solid #a8a8a6;
+  border: 2px solid white;
   /* padding вокруг плашки */
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #232324;
+  background-color: #121213;
 }
 
 .wrapper {
