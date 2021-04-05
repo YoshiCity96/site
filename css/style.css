@@ -2738,8 +2738,42 @@ button.swiper-pagination-bullet {
   border: 1px solid #7a7a7a;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: HelveticaNeueCyr;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #323233 #a8a8a6;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* ширина scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #a8a8a6;
+  border-radius: 10px;
+  /* цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #323233;
+  /* цвет плашки */
+  border-radius: 7px;
+  /* закругления плашки */
+  border: 2px solid #a8a8a6;
+  /* padding вокруг плашки */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #232324;
 }
 
 .wrapper {
