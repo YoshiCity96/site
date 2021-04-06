@@ -11396,6 +11396,7 @@ $(document).ready(function(){
 	
 	$('.header__burger').click(function(event){
 		$('.header__logo,.header__poloska,.header__burger,.header__menu').toggleClass('active');
+		$('body').toggleClass('lock');
 	});
 
 	
@@ -11779,41 +11780,43 @@ function themeWhite(){
 
 themeWhite()
 
-function languageRu(){
-	const togglelanguageRu = document.querySelector('.home__button-ru')
+function headerThemeBlack(){
+	const toggleThemeBlack = document.querySelector('.header-theme__black')
 	let el = document.documentElement
-	togglelanguageRu.addEventListener('click',() =>{
-			el.removeAttribute('data-language')
-			localStorage.removeItem('language')
-	
-	})
-
-	if(localStorage.getItem('language') !=null){
-		el.setAttribute('data-language','ru')
-	}
-}
-
-languageRu()
-
-function languageEng(){
-	const togglelanguageEng = document.querySelector('.home__button-eng')
-	let el = document.documentElement
-	togglelanguageEng.addEventListener('click',() =>{
+	toggleThemeBlack.addEventListener('click',() =>{
 		
-	
-			el.setAttribute('data-language','eng')
-			localStorage.setItem('language','eng')
+		
+			el.removeAttribute('data-theme')
+			localStorage.removeItem('theme')
 		
 	
 	})
 
-	if(localStorage.getItem('language') !=null){
-		el.setAttribute('data-language','eng')
+	if(localStorage.getItem('theme') !=null){
+		el.setAttribute('data-theme','white')
 	}
 }
 
-languageEng()
+headerThemeBlack()
 
+
+function headerThemeWhite(){
+	const toggleThemeWhite = document.querySelector('.header-theme__white')
+	let el = document.documentElement
+	toggleThemeWhite.addEventListener('click',() =>{
+		
+		
+			el.setAttribute('data-theme','white')
+			localStorage.setItem('theme','white')
+		
+	
+	})
+
+	if(localStorage.getItem('theme') !=null){
+		el.setAttribute('data-theme','white')
+	}
+}
+headerThemeWhite()
 
 
 
