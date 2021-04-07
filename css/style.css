@@ -1895,6 +1895,11 @@ h6 {
   --white-color: #0b0b0b;
 }
 
+:root[data-theme='white'] .clients__img img {
+  -webkit-filter: brightness(0%);
+          filter: brightness(0%);
+}
+
 :root[data-language='eng'] .home__button-eng {
   color: black;
   background-color: white;
