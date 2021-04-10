@@ -2757,6 +2757,10 @@ body.lock {
   overflow: hidden;
 }
 
+body.menu {
+  overflow: hidden;
+}
+
 .wrapper {
   position: fixed;
   width: 100%;
@@ -2805,12 +2809,6 @@ body.lock {
   font-size: 18px;
   font-weight: bold;
   color: var(--white-color);
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
-.home__showreel:hover span {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -3391,4 +3389,50 @@ body.lock {
 
 .news__item:hover p {
   color: #7a7a7a;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #7a7a7adc;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  z-index: 20;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup__content {
+  max-width: 800px;
+}
+
+.popup__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--white-color);
+  font-size: 50px;
+}
+
+.popup._open {
+  opacity: 1;
+  visibility: visible;
 }

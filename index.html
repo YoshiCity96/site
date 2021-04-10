@@ -64,9 +64,9 @@
 			<button type="submit" class="header-theme__white">День</button>
 				<button type="submit" class="header-theme__black">Ночь</button>
 			</div>
-			<div class="header__showreel">
+			<a href="#popup" class="header__showreel popup-link">
 				<span>Showreel</span>
-			</div>
+			</a>
 			<ul class="header__list" >
 				<li class="header__link header__link_main"><a href="index.html">Главная</a></li>
 				<li class="header__link"><a href="onas.html">Кто мы</a></li>
@@ -129,9 +129,9 @@
 			<button type="submit" class="theme__white">День</button>
 				<button type="submit" class="theme__black">Ночь</button>
 			</div>
-			<div class="home__showreel">
+			<a href="#popup"class="home__showreel popup-link">
 				<span>Showreel</span>
-			</div>
+			</a>
 				<div class="home__title">
 					<div class="Pure">
 						Pure
@@ -263,6 +263,8 @@
 	
 
 	</main>
+
+	
 	
 
  <footer class="footer">
@@ -306,7 +308,18 @@
  </footer>
 	
 
-	
+	<div id="popup" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a href="#popup" class="popup__close close-popup">×</a>
+				<div class="popup__video">
+					
+					<video src="img/videoplayback.mp4" controls width="800px" height="500px" ></video>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="js/script.min.js"></script>
 	
 	
