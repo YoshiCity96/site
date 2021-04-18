@@ -11387,7 +11387,9 @@ else
 })();
 ;
 
-
+$(window).on('load', function() {
+	$('.preloader').fadeOut().end().delay(400).fadeOut('slow');
+ });
 
 
 $(document).ready(function(){
@@ -11458,6 +11460,8 @@ $(document).ready(function(){
 		
 	
 });
+
+
 
 
 document.addEventListener('DOMContentLoaded',function(){
@@ -11560,7 +11564,7 @@ $('.img-parallax').each(function(){
 		 // Max number of pixels until block disappear
 		 var imgTop = winH + parentH;
 		 // Porcentage between start showing until disappearing
-		 var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 50));
+		 var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 50) + 7);
 	  }
 	  img.css({
 		 top: imgPercent + '%',
@@ -11714,33 +11718,33 @@ if(footerItems.length > 0){
 const animItems = document.querySelectorAll('.working');
 if(animItems.length > 0){
 	window.addEventListener('scroll', animOnScroll);
-	function animOnScroll(){
+	function animOnScroll(){ 
 		for(let index = 0; index < animItems.length; index++) {
 			const animItem = animItems[index];
 			const animItemHeight = animItem.offsetHeight;
 			const animItemOffset = offset(animItem).top;
 			const animStart = 1;
-
+			const windowInnerWidth = document.documentElement.clientWidth;
 			let animItemPoint = window.innerHeight - animItemHeight/animStart;
 			if(animItemHeight > window.innerHeight){
 				animItemPoint = window.innerHeight - window.innerHeight/animStart;
 			}
 
-			if((pageYOffset > animItemOffset - animItemPoint -150) && pageYOffset < (animItemOffset + animItemHeight-450)){
+			if((pageYOffset > animItemOffset - animItemPoint -150) && pageYOffset < (animItemOffset + animItemHeight-450) && windowInnerWidth > 992){
 				animItem.classList.add('_fixed');
 
 			} else{
 				animItem.classList.remove('_fixed');
 			}
 
-			if(pageYOffset > (animItemOffset + animItemHeight-600)){
+			if(pageYOffset > (animItemOffset + animItemHeight-600) && windowInnerWidth > 992){
 				animItem.classList.add('_opasity');
 
 			} else{
 				animItem.classList.remove('_opasity');
 			}
 
-			if(pageYOffset < (animItemOffset + animItemHeight-850)){
+			if(pageYOffset < (animItemOffset + animItemHeight-850) && windowInnerWidth > 992){
 				var attrstyle = 'transform:translate3d(-' + (pageYOffset - animItemOffset) + 'px,' + '0px, 0px);';
 	
 				$(".working__slide").attr('style', attrstyle);
