@@ -1207,7 +1207,7 @@ h6 {
       -ms-transform: scale(1);
           transform: scale(1);
   top: 80%;
-  left: 0px;
+  left: -20px;
 }
 
 .checkbox__input {
