@@ -4007,6 +4007,10 @@ body.menu {
     top: 0;
   }
 
+  .form__button::after {
+    top: 6px;
+  }
+
   .working__body {
     max-width: 1200px;
   }
