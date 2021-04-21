@@ -11388,7 +11388,7 @@ else
 ;
 
 $(window).on('load', function() {
-	$('.preloader').fadeOut().end().delay(400).fadeOut('slow');
+	$('.preloader').fadeOut().end().delay(100).fadeOut('slow');
  });
 
 
