@@ -849,9 +849,6 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
 }
 
 .footer__body {
@@ -4050,6 +4047,14 @@ body.menu {
 
   .page {
     display: none;
+  }
+
+  .footer {
+    height: 700px;
+  }
+
+  .footer__body {
+    margin: 100px 0 0 0;
   }
 
   .footer__title {
