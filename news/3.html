@@ -11,6 +11,18 @@
 <meta name="viewport" content="width=device-width">
 </head>
 <body>
+	<div class="preloader">
+		<div class="preloader__row">
+		  <div class="preloader__item">
+			<div class="preloader__pure">
+				Pure
+			</div>
+			  <div class="preloader__vision">
+				Vision
+			  </div>
+		  </div>
+		</div>
+	 </div>
 	<div class="wrapper">
 	<header class="header">
 	
@@ -51,16 +63,16 @@
 			
 			<nav class="header__menu">
 				<div class="header__language">
-					<button onclick="document.location='index.html'" type="submit" class="home__button-ru">Rus</button>
-				<button onclick="document.location='eng/index.html'" type="submit" class="home__button-eng">Eng</button>
+					<button onclick="document.location='../index.html'" type="submit" class="home__button-ru">Rus</button>
+				<button onclick="document.location='../eng/index.html'" type="submit" class="home__button-eng">Eng</button>
 				</div>
 				<div class="header__theme">
 				<button type="submit" class="theme__white">День</button>
 					<button type="submit" class="theme__black">Ночь</button>
 				</div>
-				<div class="header__showreel">
+				<a href="#popup" class="header__showreel popup-link">
 					<span>Showreel</span>
-				</div>
+				</a>
 				<ul class="header__list" >
 					<li class="header__link"><a href="../index.html">Главная</a></li>
 					<li class="header__link"><a href="../onas.html">Кто мы</a></li>
@@ -211,7 +223,7 @@
 			</div>
 				</div>
 				<div class="footer__arrow">
-				  <img src="img/Компонент 121 – 1.svg" alt="">
+					<img src="../img/Компонент 121.svg" alt="">
 				</div>
 			  </div>
 			</div>
@@ -220,7 +232,21 @@
 
 </footer>
 	
-
+<div id="popup" class="popup">
+	<div class="popup__body">
+		<a href="#popup" class="popup__close close-popup">×</a>
+		<div class="popup__content">
+			
+			
+				<div class="popup__video">
+				
+					<iframe id="video" title="vimeo-player" src="https://player.vimeo.com/video/539747489?loop=1&playlist=Video_ID" frameborder="0"  allowfullscreen></iframe>
+				</div>
+			
+			
+		</div>
+	</div>
+</div>
 <script src="../js/script.min.js"></script>
 </body>
 </html>

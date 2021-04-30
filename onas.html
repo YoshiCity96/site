@@ -12,6 +12,18 @@
 <meta name="viewport" content="width=device-width">
 </head>
 <body>
+	<div class="preloader">
+		<div class="preloader__row">
+		  <div class="preloader__item">
+			<div class="preloader__pure">
+				Pure
+			</div>
+			  <div class="preloader__vision">
+				Vision
+			  </div>
+		  </div>
+		</div>
+	 </div>
 	<div class="wrapper">
 	<header class="header">
 	
@@ -59,9 +71,9 @@
 				<button type="submit" class="theme__white">День</button>
 					<button type="submit" class="theme__black">Ночь</button>
 				</div>
-				<div class="header__showreel">
+				<a href="#popup" class="header__showreel popup-link">
 					<span>Showreel</span>
-				</div>
+				</a>
 				<ul class="header__list" >
 					<li class="header__link"><a href="index.html">Главная</a></li>
 					<li class="header__link header__link_main"><a href="onas.html">Кто мы</a></li>
@@ -126,7 +138,7 @@
 		<div class="onas__subtitle">PureVision — независимое творческое объединение. Основано в 2016 году тремя неравнодушными к digital людьми. <br>
 			Наша цель — разработка простых и эффективных решений в веб сфере. </div>
 		</div>
-		<div class="onas__img-b"><img src="img/Слой 0 копия.png"  data-speed="1.2" class="img-parallax" /></div>
+		<div class="onas__img-b"><img src="img/big.png"  data-speed="1.2" class="img-parallax" /></div>
 	</div>
 		<div class="competence">
 			<div class="container">
@@ -211,11 +223,11 @@
 			<div class="competence__row-3">
 				
 					
-					<img src="img/IMG_20210419_222050.jpg"class="competence__img-1" />
+					<img src="img/v1.png"class="competence__img-1" />
 				
 				
-					<img src="img/IMG_20210416_133541.jpg" class="competence__img-2"/>
-					<img src="img/IMG_20210416_133541.jpg" class="competence__img-3" />
+					<img src="img/v2.png" class="competence__img-2"/>
+					<img src="img/v2.png" class="competence__img-3" />
 				
 				
 			</div>
@@ -450,7 +462,7 @@
 			 </div>
 				 </div>
 				 <div class="footer__arrow">
-					<img src="img/Компонент 121 – 1.svg" alt="">
+					<img src="img/Компонент 121.svg" alt="">
 				 </div>
 				</div>
 			 </div>
@@ -458,7 +470,21 @@
 			 
 
  </footer>
-
+ <div id="popup" class="popup">
+	<div class="popup__body">
+		<a href="#popup" class="popup__close close-popup">×</a>
+		<div class="popup__content">
+			
+			
+				<div class="popup__video">
+				
+					<iframe id="video" title="vimeo-player" src="https://player.vimeo.com/video/539747489?loop=1&playlist=Video_ID" frameborder="0"  allowfullscreen></iframe>
+				</div>
+			
+			
+		</div>
+	</div>
+</div>
 	
 <script src="js/script.min.js"></script>
 </body>
