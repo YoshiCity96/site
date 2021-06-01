@@ -11388,15 +11388,19 @@ else
 ;
 
 $(window).on('load', function() {
-	$('.preloader').fadeOut().end().delay(100).fadeOut('slow');
+	$('.preloader').fadeOut().end().delay(400).fadeOut('slow');
  });
 
 
+
+ 
+
 $(document).ready(function(){
+
 	
 
 
-	$('.header__burger').on('click touchend', function() {
+	$('.header__burger').on('click ontouchstart', function(event) {
 		$('.header__logo,.header__poloska,.header__burger,.header__menu').toggleClass('active');
 		$('body').toggleClass('menu');
 		return false;
@@ -11404,15 +11408,16 @@ $(document).ready(function(){
 
 
 	
-	
-
-	$('.open__title').click(function(event){
+	$('.open__title').on('click ontouchstart', function(event) {
 		$(this).toggleClass('active').next().slideToggle(300);
+		return false;
 	});
+
+	
 
 	$(function(){
 		let filter=$("[data-filter]");
-			filter.on("click", function(event){
+			filter.on("click ontouchstart", function(event){
 				event.preventDefault();
 				
 		
@@ -11437,7 +11442,7 @@ $(document).ready(function(){
 	
 	$(function(){
 		let filter=$("[data-filter]");
-			filter.on("click", function(event){
+			filter.on("click ontouchstart", function(event){
 				event.preventDefault();
 				
 		
@@ -11460,16 +11465,16 @@ $(document).ready(function(){
 			});
 		});
 		
-		$('.popup__close,.popup__body').on('click', function() {
+		$('.popup__close,.popup__body').on('click ontouchstart', function() {
 			document.getElementById('video').src = "not.found/404"
 			setTimeout(function(){
-				document.getElementById('video').src = "https://player.vimeo.com/video/539747489"
+				document.getElementById('video').src = "https://player.vimeo.com/video/539747489?loop=1&playlist=Video_ID"
 			}, 600);
 			
 			
 		});
 
-		const popupLinks = document.querySelectorAll('.popup-link');
+	const popupLinks = document.querySelectorAll('.popup-link');
 	const body = document.querySelector('body');
 	const lockPadding = document.querySelectorAll(".lock-padding");
 
@@ -11690,13 +11695,13 @@ $('.img-parallax').each(function(){
 	  var winY = $(this).scrollTop();
 	  var winH = $(this).height();
 	  var parentH = imgParent.innerHeight();
- 
+	  var parentW = imgParent.innerWidth();
  
 	  // The next pixel to show on screen      
 	  var winBottom = winY + winH;
  
 	  // If block is shown on screen
-	  if (winBottom > imgY && winY < imgY + parentH) {
+	  if (winBottom > imgY && winY < imgY + parentH && parentW > 992) {
 		 // Number of pixels shown after block appear
 		 var imgBottom = ((winBottom - imgY) * speed);
 		 // Max number of pixels until block disappear
